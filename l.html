@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="l.css">
+    <title>Your Name - Personal Landing Page</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Harika Kondaparthi</h1>
+            <p>Web Developer &amp; Enthusiast</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my personal landing page! I am passionate about web development and love creating awesome projects. Let's connect and explore the world of coding together.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>python</li>
+                <li>C</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My project</h2>
+            <a href="https://hodophile-web.s3.ap-south-1.amazonaws.com/hodophile/new.html"><h3>HODOPHILE</h3></a>
+            
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="1.png" style="width:50%">
+                <div class="text">home</div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="2.png" style="width:50%">
+                <div class="text">Destinations</div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="3.png" style="width:50%">
+                <div class="text">hotel bookings</div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="4.png" style="width:50%">
+                <div class="text">places</div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">5/ 5</div>
+                <img src="5.png" style="width:50%">
+                <div class="text">booking</div>
+              </div>
+        </div>
+        <br>
+        <div style="text-align:justify">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+
+          </div>
+          <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+             
+        
+    </section>
+
+    <footer>
+        <section id="contact" class="section">
+            <div class="container">
+                <p>contact me</p>
+                <p><a href="https://www.linkedin.com/in/harika-kondaparthi-838285253/">Linkendin</a></p>
+            <a href="https://github.com/Harika2124">GitHub</a>
+            </div>
+        </section>
+       
+    </footer>
+
+</body>
+</html>

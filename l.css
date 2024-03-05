@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #3498db, #ffffff); /* Blue to white gradient background */
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    background: url('wave.svg') repeat-x bottom; /* Replace 'wave.svg' with your wave image */
+    background-size: contain;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.about, .skills {
+    text-align: center;
+}
+.about, .projects{
+    text-align:center;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #3498db;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+footer {
+    text-align:center;
+    padding:1px;
+    background: #3498db;
+    color: #fff;
+}
